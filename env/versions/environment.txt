@@ -1,0 +1,23 @@
+Software environment of the original analysis
+(installed 2026-10-16; package list re-recorded 2026-10-20 after adding
+geomloss and openpyxl)
+
+Container   docker://pytorch/pytorch:2.6.0-cuda12.4-cudnn9-runtime
+            Python 3.11, torch 2.6.0+cu124 (from the image)
+            built with Singularity 3.8.5
+            sha256 of the original .sif file:
+            a452a2744a0f21f73fbc6cb59a16719b96ce4b274eb07a34d748f8b4903fa335
+            (identifies the original build only; a fresh pull of the same tag
+            produces a file with a different hash)
+
+Packages    requirements.lock: the pip --user layer installed on top of the
+            image, including terra-st 0.1.13, geomloss 0.3.1, openpyxl 3.1.5
+
+Model       Lotfollahi-lab/TERRA-112M on Hugging Face
+            revision 00d1c977e49364ba10c28692abcbd102e115bf91
+            model_checkpoint.pt sha256
+            d6b46ad4b8e63e67b968e789256839da80dafac3e5de482a5e21a5e5eb4bada2
+            (both pinned in env/terra_env.sh and verified by
+            env/check_config.sh)
+
+Export step R 4.4.1 with Matrix, igraph and openxlsx, run on the host

@@ -1,0 +1,11 @@
+# analysis.cfg -- cell states analysed (read by steps 03, 04 and 07).
+#
+# Copy this file to config/analysis.cfg (which git ignores) and replace the
+# placeholders with cell_state labels of the dataset: comma-separated, no
+# quotes, comments on their own lines.
+
+# Fibroblast states whose CSF1+ cells are the source of the ligand
+SOURCE_STATES=<fibroblast_state_1>,<fibroblast_state_2>
+
+# Macrophage states whose model representation is read out (one or more)
+TARGET_STATES=<macrophage_state_1>,<macrophage_state_2>

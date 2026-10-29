@@ -1,0 +1,24 @@
+# paths.cfg -- paths for this repository (the cell states analysed are set
+# in config/analysis.cfg).
+#
+# Copy this file to config/paths.cfg and replace every
+# placeholder with an absolute path on your system. Format: KEY=value.
+# Run "bash env/check_config.sh" afterwards to verify the settings.
+
+# Per-patient Xenium folders as distributed by the dataset authors
+# (xenium_data_object/<PATIENT>/{mat_counts.rds, df_meta.rds, spatial_xy.rds}).
+INPUT_DIR=/path/to/xenium_data_object
+
+# Large intermediate files: exported matrices, .h5ad files, tokenised
+# datasets, embeddings and caches. Expect several hundred GB for the cohort.
+WORK_DIR=/path/to/work
+
+# Summary workbooks (.xlsx) written by each step.
+RESULTS_DIR=/path/to/results
+
+# Container image, Python packages installed into it, model weights, caches.
+SOFTWARE_DIR=/path/to/software
+
+# Host paths mounted inside the container, comma-separated. Together they must
+# contain this repository and every path above (check_config.sh verifies it).
+BIND_PATHS=/path/to/storage

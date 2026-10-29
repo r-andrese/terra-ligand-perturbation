@@ -1,0 +1,29 @@
+# Local configuration
+config/*.cfg
+
+# Scheduler logs
+logs/
+
+# Data and outputs
+*.rds
+*.h5ad
+*.npz
+*.bin
+*.xlsx
+*.csv
+*.tsv
+*.sif
+*.pt
+*.arrow
+
+# Python
+__pycache__/
+*.pyc
+.Rhistory
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Tests (not for release)
+tests/
