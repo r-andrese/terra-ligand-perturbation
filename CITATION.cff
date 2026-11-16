@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below, together with Yan et al. (2026) for the data and Birk et al. (2026) for TERRA."
+type: software
+title: "terra-ligand-perturbation: zero-shot in silico ligand perturbation in spatial transcriptomics using TERRA"
+abstract: >-
+  Pipeline for zero-shot in silico perturbation of a ligand in the spatial
+  neighbourhood of receiving cells with the pretrained spatial
+  transcriptomics foundation model TERRA. Perturbations are built by editing
+  the tokenised neighbour blocks of ligand-expressing cells and compared with
+  rank-matched null-gene edits and positive and negative controls, using a
+  leave-one-donor-out classifier readout and embedding-shift magnitudes.
+authors:
+  - family-names: "Andres Ejarque"
+    given-names: "Rosa"
+    orcid: "https://orcid.org/0000-0003-0012-1155"
+    affiliation: "King's College London"
+version: "0.1.0"
+date-released: "2026-11-16"
+license: MIT
+repository-code: "https://github.com/r-andrese/terra-ligand-perturbation"
+keywords:
+  - spatial transcriptomics
+  - foundation models
+  - in silico perturbation
+  - Xenium
+  - ligand-receptor
+  - tumour microenvironment

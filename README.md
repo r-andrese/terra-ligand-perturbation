@@ -50,7 +50,7 @@ any observed shift is specific to CSF1.
 All 44 patients with Xenium data are exported on the gene panel shared by
 all sections. Tissue pieces are defined as connected regions of occupied
 100 um bins, so that spatial neighbourhoods never bridge separate pieces.
-Inclusion rules are median depth >= 100 counts; >= 50 CSF1+ fibroblasts; >= 50 target macrophages), 
+Inclusion rules are median depth >= 100 counts; >= 50 CSF1+ fibroblasts; >= 50 target macrophages, 
 leaving **38 patients**.
 
 * CSF1+ fibroblast: a fibroblast in one of the source states with a raw
@@ -220,6 +220,32 @@ qsub -o logs/ -hold_jid tlp_06_ko_embed scripts/07_ko_pool.sh
 Step 06 needs a card with >= 40 GB; restrict the GPU request accordingly
 (the job script requests only `gpu=true`). R must be available to the
 step 01 job.
+
+## Planned developments
+
+Version 0.1 reproduces the analysis described above. A future version is
+intended to generalise the pipeline, so that any ligand, source cell states
+and target cell states can be tested on a single-cell-resolution spatial
+dataset, with:
+
+* the ligand and cell states set in the configuration;
+* patient inclusion derived from the configured states and thresholds;
+* summary figures of the classifier and magnitude readouts.
+
+## How to cite
+
+If you use this code, please cite the software:
+
+> Andres Ejarque R. *terra-ligand-perturbation: zero-shot in silico ligand
+> perturbation in spatial transcriptomics using TERRA* (version 0.1.0). 2026.
+> https://github.com/r-andrese/terra-ligand-perturbation
+
+## Author and contact
+
+Rosa Andres Ejarque, King's College London.
+
+Questions, bug reports and suggestions are welcome as
+[GitHub issues](https://github.com/r-andrese/terra-ligand-perturbation/issues).
 
 ## Citation and licence
 
